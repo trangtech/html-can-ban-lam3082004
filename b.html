@@ -10,21 +10,22 @@
 
 <body>
     <h1>Shop Checkbox</h1>
-
-    <button onclick="myFunction(), myFunction1(), myFunction2()">All</button>
-    <form>
-        <input type="checkbox" id="myCheck">
-        <label for="vehicle1"> Sách(còn lại 10)</label> Số Lượng:<input type="number" id="quantity1" name="quantity"
-            min="0" max="10">20$/cái<br>
-        <input type="checkbox" id="myCheck1">
-        <label for="vehicle2"> Máy tính( còn lại 10)</label> Số Lượng:<input type="number" id="quantity2"
-            name="quantity" min="0" max="10" value="số lượng">30$/cái<br>
-        <input type="checkbox" id="myCheck2">
-        <label for="vehicle3"> bút( hết! )</label><br>
-        <input type="checkbox" id="myCheck2">
-        <label for="vehicle3"> html, css ( Không bán)</label><br><br>
-        <button type="button" onclick="myFunction3()">Mua</button>
-    </form>
+    <fieldset>
+        <form>
+            <input type="checkbox" id="myCheck">
+            <label for="vehicle1"> Sách(còn lại 10)</label> Số Lượng:<input type="number" id="quantity1" name="quantity"
+                min="0" max="10">20$/cái<br>
+            <input type="checkbox" id="myCheck1">
+            <label for="vehicle2"> Máy tính( còn lại 10)</label> Số Lượng:<input type="number" id="quantity2"
+                name="quantity" min="0" max="10" value="số lượng">30$/cái<br>
+            <input type="checkbox" id="myCheck2">
+            <label for="vehicle3"> bút( hết! )</label><br>
+            <input type="checkbox" id="myCheck2">
+            <label for="vehicle3"> html, css ( Không bán)</label><br><br>
+        </form>
+        <button onclick="myFunction(), myFunction1(), myFunction2()">All</button>
+    </fieldset>
+    <button type="button" onclick="myFunction3()">Mua</button>
     <h1 id="haha">Tổng tiền: 0</h1>
     <!-- <p id="haha">0</p> -->
 </body>
