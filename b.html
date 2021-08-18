@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Shop Checkbox</h1>
+
+    <button onclick="myFunction(), myFunction1(), myFunction2()">All</button>
+    <form>
+        <input type="checkbox" id="myCheck">
+        <label for="vehicle1"> Sách(còn lại 10)</label> Số Lượng:<input type="number" id="quantity1" name="quantity"
+            min="0" max="10">20$/cái<br>
+        <input type="checkbox" id="myCheck1">
+        <label for="vehicle2"> Máy tính( còn lại 10)</label> Số Lượng:<input type="number" id="quantity2"
+            name="quantity" min="0" max="10" value="số lượng">30$/cái<br>
+        <input type="checkbox" id="myCheck2">
+        <label for="vehicle3"> bút( hết! )</label><br>
+        <input type="checkbox" id="myCheck2">
+        <label for="vehicle3"> html, css ( Không bán)</label><br><br>
+        <button type="button" onclick="myFunction3()">Mua</button>
+    </form>
+    <h1 id="haha">Tổng tiền: 0</h1>
+    <!-- <p id="haha">0</p> -->
+</body>
+<script>
+    function myFunction() {
+        var x = document.getElementById("myCheck");
+        x.checked = true;
+    }
+    function myFunction1() {
+        var x = document.getElementById("myCheck1");
+        x.checked = true;
+    }
+    function myFunction2() {
+        var x = document.getElementById("myCheck2");
+        x.checked = true;
+        // print("x")
+    }
+    function myFunction3() {
+        var s = 0;
+        var x = document.getElementById("quantity1").value;
+        var y = document.getElementById("quantity2").value;
+        s += x * 20;
+        s += y * 30;
+        document.getElementById("haha").innerHTML = "Tổng tiền:" + ' ' + s;
+    }
+</script>
+
+</html>
